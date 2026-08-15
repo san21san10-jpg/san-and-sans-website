@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SAN & SAN'S | Premium Dry Fruits & Spices</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #050505;
+            color: white;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #050505;
+            border-bottom: 1px solid #d4af57;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #d4af57;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px;
+            background: radial-gradient(circle, #241e0d, #050505 65%);
+        }
+
+        .small-title {
+            color: #d4af57;
+            letter-spacing: 4px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(50px, 10vw, 90px);
+            letter-spacing: 5px;
+        }
+
+        .gold {
+            color: #d4af57;
+        }
+
+        .hero p {
+            color: #cccccc;
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            border: 1px solid #d4af57;
+            color: #d4af57;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #aaaaaa;
+            margin-bottom: 45px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+            color: #cccccc;
+        }
+
+        .products {
+            background: #0b0b0b;
+        }
+
+        .product-grid,
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .product-card {
+            border: 1px solid #3a3018;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .product-card h3,
+        .why-card h3 {
+            color: #d4af57;
+            margin-bottom: 10px;
+        }
+
+        .product-card p,
+        .why-card p {
+            color: #aaaaaa;
+        }
+
+        .product-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #0b0b0b;
+        }
+
+        .contact p {
+            color: #bbbbbb;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 30px;
+            background: #d4af57;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #777777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 15px;
+            }
+
+            nav a {
+                margin-left: 8px;
+                font-size: 11px;
+            }
+
+            .logo {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 70px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">SAN & SAN'S</div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div>
+            <div class="small-title">PREMIUM QUALITY</div>
+
+            <h1>SAN <span class="gold">&</span> SAN'S</h1>
+
+            <p>
+                Premium dry fruits and spices, carefully selected
+                for quality, freshness and exceptional taste.
+            </p>
+
+            <a href="#products" class="button">EXPLORE OUR PRODUCTS</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">
+            About <span class="gold">SAN & SAN'S</span>
+        </h2>
+
+        <p class="section-subtitle">
+            Quality you can taste. Purity you can trust.
+        </p>
+
+        <div class="about">
+            <p>
+                SAN & SAN'S brings carefully selected dry fruits and
+                spices to your home. Our focus is simple — quality,
+                freshness and great taste.
+            </p>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+
+        <h2 class="section-title">
+            Our <span class="gold">Products</span>
+        </h2>
+
+        <p class="section-subtitle">
+            Premium selections for every occasion.
+        </p>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-icon">🥜</div>
+                <h3>Almonds</h3>
+                <p>Premium quality almonds selected for freshness and taste.</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">🌰</div>
+                <h3>Cashews</h3>
+                <p>Carefully selected cashews with a rich and satisfying taste.</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">💚</div>
+                <h3>Pistachios</h3>
+                <p>Premium pistachios selected for quality and flavour.</p>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">🌿</div>
+                <h3>Spices</h3>
+                <p>Aromatic spices selected to bring authentic flavour to your kitchen.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+
+        <h2 class="section-title">
+            Why <span class="gold">SAN & SAN'S?</span>
+        </h2>
+
+        <p class="section-subtitle">Our promise to you.</p>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <h3>Premium Quality</h3>
+                <p>We focus on carefully selecting quality ingredients.</p>
+            </div>
+
+            <div class="why-card">
+                <h3>Freshness</h3>
+                <p>Products prepared and packed with care.</p>
+            </div>
+
+            <div class="why-card">
+                <h3>Carefully Selected</h3>
+                <p>Every product is chosen with our customers in mind.</p>
+            </div>
+
+            <div class="why-card">
+                <h3>Our Promise</h3>
+                <p>Quality, freshness and great taste in every pack.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">
+            Get In <span class="gold">Touch</span>
+        </h2>
+
+        <p>Want to know more about SAN & SAN'S?</p>
+        <p>Contact us for product information and orders.</p>
+
+        <a class="whatsapp" href="#">
+            WHATSAPP US
+        </a>
+
+    </section>
+
+    <footer>
+        © 2026 SAN & SAN'S. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
